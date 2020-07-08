@@ -17,7 +17,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         registry: gcr.io
-        repository: covidshield/key-retrieval
+        repository: covid-test-282602/key-retrieval
         tags: latest,${{ github.sha }}
         build_args: branch=${{ github.ref }},revision=${{ github.sha }},component=key-retrieval
 
@@ -27,7 +27,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         registry: gcr.io
-        repository: covidshield/key-submission
+        repository: covid-test-282602/key-submission
         tags: latest,${{ github.sha }}
         build_args: branch=${{ github.ref }},revision=${{ github.sha }},component=key-submission
 
@@ -37,6 +37,6 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         registry: gcr.io
-        repository: covidshield/monolith
+        repository: covid-test-282602/monolith
         tags: latest,${{ github.sha }}
         build_args: branch=${{ github.ref }},revision=${{ github.sha }},component=monolith

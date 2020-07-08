@@ -1,5 +1,6 @@
 # COVID Shield Diagnosis Server
 
+
 ![Container Build](https://github.com/CovidShield/server/workflows/Container%20Builds/badge.svg)
 
 This repository implements a diagnosis server to use as a server for Apple/Google's [Exposure

@@ -6,6 +6,7 @@ on:
 
 jobs:
   build-n-push:
+    if: github.ref != 'refs/heads/master' && github.repository_owner == 'CovidShield'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
